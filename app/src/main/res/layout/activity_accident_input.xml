@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:context="com.appdevin.sgtraffic.AccidentInput"
+              android:gravity="center"
+              android:background="@drawable/bg_layout"
+    >
+
+    <LinearLayout
+        android:radius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/ubuntu_mono"
+            android:text="Location Marker" />
+
+        <EditText
+            android:id="@+id/FirstPara"
+            android:layout_width="277dp"
+            android:layout_height="30.3dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="Lat"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:focusable="true"
+            />
+
+
+        <EditText
+            android:id="@+id/SecondPara"
+            android:layout_width="277dp"
+            android:layout_height="30.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="Lng"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:focusable="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Days"/>
+
+            <Spinner
+                android:id="@+id/Month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Month"/>
+
+            <Spinner
+                android:id="@+id/spinYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="110dp"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="277dp"
+            android:layout_height="30.3dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="Address"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:focusable="true"
+            />
+
+        <EditText
+            android:id="@+id/TypeOfAccident"
+            android:layout_width="277dp"
+            android:layout_height="30.3dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="Accident Type"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:focusable="true"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/Licenseplatenumber"
+            android:focusable="true"
+            android:layout_width="277dp"
+            android:layout_height="30.3dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="License plate number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="277dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedet"
+            android:fontFamily="serif-monospace"
+            android:hint="Description"
+            android:paddingLeft="10dp"
+            android:singleLine="false"
+            android:textSize="15sp"
+            android:focusable="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/ImagesView"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/UploadImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:drawableTop="@drawable/ic_file_upload_black_24dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/AddMarker"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_effect"
+                android:drawableLeft="@drawable/ic_action_pin"
+                android:enabled="true"
+                android:padding="10dp"
+                android:text="Add Marker"
+                />
+
+            <Button
+                android:id="@+id/CurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ripple_effect"
+                android:drawableLeft="@drawable/ic_action_current"
+                android:enabled="true"
+                android:padding="10dp"
+                android:text="Current Location"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

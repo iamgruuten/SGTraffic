@@ -1,0 +1,46 @@
+<resources>
+    <string name="back"><u>Back</u></string>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDatePickerSpinnerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:colorControlNormal">@color/LightGrey</item>
+    </style>
+
+    <style name="Theme.MyApp" parent="Theme.AppCompat">
+
+        <!-- Original AppCompat attributes. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+
+
+    <style name="AnimationPopup">
+        <item name="android:windowEnterAnimation">@anim/appearspeed</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="AlertDialog.AppCompat.Light">
+        <!--buttons color-->
+        <item name="colorAccent">@color/White</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialogbg</item>
+        <!--dialog Fontsize-->
+        <item name="android:textSize">8dp</item>
+    </style>
+
+</resources>

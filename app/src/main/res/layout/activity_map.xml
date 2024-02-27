@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appdevin.sgtraffic.Map">
+
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox_cameraTargetLat="40.73581"
+        mapbox_cameraTargetLng="-73.99155"
+        mapbox_styleUrl="https://maps-json.onemap.sg/Default.json"
+        mapbox_cameraZoom="11" />
+
+
+
+
+</RelativeLayout>

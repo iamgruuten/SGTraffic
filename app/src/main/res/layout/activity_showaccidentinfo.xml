@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/bgimage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkGray"
+            android:padding="5dp"
+            android:text="ACCIDENT INFORMATION"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+
+        <ImageView
+            android:id="@+id/ImageAccident"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/no_photo" />
+
+        <TableLayout
+            android:id="@+id/datatable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF">
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@color/DarkGray"
+                    android:paddingLeft="10dp"
+                    android:text="Date"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:text="[Date] "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@color/DarkGray"
+                    android:paddingLeft="10dp"
+                    android:text="Where"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/locate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:text="[Lang, Long] "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:background="@color/DarkGray"
+                    android:paddingLeft="10dp"
+                    android:text="Accident Type"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="1dp"
+                    android:background="#FFFFFF"
+                    android:text="[Type] "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkCyan"
+            android:padding="5dp"
+            android:text="Accident Description"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/accidentdesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="[Accident Description]"
+            android:textColor="@color/Black"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

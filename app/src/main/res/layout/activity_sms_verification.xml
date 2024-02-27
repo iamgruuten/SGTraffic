@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsVerification">
+
+    <Button
+        android:id="@+id/park"
+        android:layout_width="60dp"
+        android:layout_height="37dp"
+        android:background="@color/transparent"
+        android:text="Back"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/backgroud_burning_spring"
+        >
+        <ImageView
+            android:gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/verify"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center_horizontal"
+            android:text="Verification Code"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="We have sent a six digit code on"
+            android:textColor="@color/AntiqueWhite" />
+
+        <TextView
+            android:id="@+id/TraceNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center_horizontal"
+            android:text="+65 91234567"
+            android:textSize="15sp"
+            android:textColor="@color/AntiqueWhite" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+    <EditText
+        android:id="@+id/verPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+         />
+
+        <Button
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/ripple_effect"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center_horizontal"
+            android:text="Resend Verification Code"
+            android:textColor="@color/DarkBlue"
+            android:textSize="10sp"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:typeface="serif" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:backgroundTint="#00b140"
+            android:text="SUBMIT"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

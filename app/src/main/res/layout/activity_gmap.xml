@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true"
+   >
+
+<!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.appdevin.sgtraffic.GMap"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+       >
+
+        <ImageButton
+            android:id="@+id/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_drawer"
+            android:elevation="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/speedometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 m/s"
+            android:layout_alignParentBottom="true"
+            android:shadowColor="@color/WhiteSmoke"
+            />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/btnBack"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="78dp"
+            app:cb_color="#99CC00"
+            app:cb_pressedRingWidth="8dip" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/FloatAdd"
+            android:layout_marginEnd="85dp"
+            android:src="@drawable/ic_gmic" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FloatAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/add_sign" />
+
+    </RelativeLayout>
+
+<!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/nav_items"
+        />
+    <RelativeLayout
+        android:id="@+id/Really"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+
+            >
+            <at.markushi.ui.CircleButton
+                android:id="@+id/ListAccident"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip"
+                android:src="@drawable/ic_accident"
+                android:layout_marginRight="30dp"/>
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/ReportAccident"
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip"
+                android:src="@drawable/report"
+                android:layout_marginRight="30dp"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="80dip"
+                android:layout_height="80dip"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

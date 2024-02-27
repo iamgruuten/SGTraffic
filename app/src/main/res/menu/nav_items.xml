@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/Accident"
+              android:title="Accident"
+              android:icon="@drawable/ic_accident" />
+
+        <item android:id="@+id/Logout"
+              android:title="Logout"
+              android:icon="@drawable/ic_logout"/>
+
+        <item android:id="@+id/ReportAccident"
+            android:title="Report Accident"
+            android:icon="@drawable/alert_octagon"/>
+
+        <item android:title="Settings">
+            <menu>
+                <group android:checkableBehavior="none">
+                    <item
+                        android:id="@+id/sub1"
+                        android:title="List of accident"/>
+                    <item
+                        android:id="@+id/sub2"
+                        android:title="Sub item 2"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
